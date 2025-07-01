@@ -1,8 +1,7 @@
 def run_kates_couture_app():   
 
     print("Welcome to Kate's Couture!")   
-    print("\\
-Your journey to a perfectly custom-made garment starts here.")   
+    print("\nYour journey to a perfectly custom-made garment starts here.")   
     print("What can I create for you today?")   
 
     all_garment_details = {   
@@ -89,8 +88,7 @@ Your journey to a perfectly custom-made garment starts here.")
         fabric_adjustment = 0   
         chosen_fabrics = []   
 
-        print("\\
-Select Your Garment Category")   
+        print("\nSelect Your Garment Category")   
         top_level_categories = {   
             "1": "Top",   
             "2": "Bottom",   
@@ -113,8 +111,7 @@ Select Your Garment Category")
 
         if top_level_category == "Top":   
             while True:   
-                print("\\
-Select Your Top Garment")   
+                print("\nSelect Your Top Garment")   
                 top_options = {   
                     "1": "Blouse",   
                     "2": "Button Front",   
@@ -144,8 +141,7 @@ Select Your Top Garment")
 
             if garment_name not in ["Camisole", "Vest", "Blazer"]:   
                 while True:   
-                    print("\\
-Select Collar Type:")   
+                    print("\nSelect Collar Type:")   
                     collar_options = {   
                         "1": "Mandarin collar (A short, stand-up collar)",   
                         "2": "Fold-over collar (A classic collar that folds down)",   
@@ -178,8 +174,7 @@ Select Collar Type:")
 
         elif top_level_category == "Bottom":   
             while True:   
-                print("\\
-Select Your Bottom Garment")   
+                print("\nSelect Your Bottom Garment")   
                 bottom_options = {   
                     "1": "Pants",   
                     "2": "Shorts",   
@@ -204,8 +199,7 @@ Select Your Bottom Garment")
 
             if garment_name == "Pants":   
                 while True:   
-                    print("\\
-Select Your Pants Style")   
+                    print("\nSelect Your Pants Style")   
                     pants_styles = {   
                         "1": "Slacks",   
                         "2": "Sweats",   
@@ -234,8 +228,7 @@ Select Your Pants Style")
                         print("Invalid choice. Please enter a number from 1 to 7 (or 0 to go back).")   
             elif garment_name == "Shorts":   
                 while True:   
-                    print("\\
-Select Your Shorts Style")   
+                    print("\nSelect Your Shorts Style")   
                     shorts_styles = {   
                         "1": "Joggers",   
                         "2": "Sweats",   
@@ -258,8 +251,7 @@ Select Your Shorts Style")
                         print("Invalid choice. Please enter a number from 1 to 4 (or 0 to go back).")   
             elif garment_name == "Skirt":   
                 while True:   
-                    print("\\
-Select Your Skirt Style")   
+                    print("\nSelect Your Skirt Style")   
                     skirt_styles = {   
                         "1": "Floor",   
                         "2": "Ankle",   
@@ -281,8 +273,7 @@ Select Your Skirt Style")
 
         elif top_level_category == "Dress": # New Dress category
             while True:
-                print("\\
-Select Your Dress")
+                print("\nSelect Your Dress")
                 dress_options = {
                     "1": "Dress"
                 }
@@ -305,8 +296,7 @@ Select Your Dress")
 
         elif top_level_category == "Combo":   
             while True:   
-                print("\\
-Select Your Combo Garment")   
+                print("\nSelect Your Combo Garment")   
                 # Dress option removed from here
                 print("1. Suit")   
                 print(" 1.1. Vest/Blazer/Pants")   
@@ -361,13 +351,11 @@ Select Your Combo Garment")
 
                 break   
 
-        print("\\
-Add Customization Details")   
+        print("\nAdd Customization Details")   
 
         if garment_name in ["Button Front", "Evening", "Blazer", "Vest"]:   
             while True:   
-                print("\\
-Button Placement")   
+                print("\nButton Placement")   
                 print("Choose the button placement:")   
                 print("1. Left Button (buttons on wearer's left, buttonholes on right)")   
                 print("2. Right Button (buttons on wearer's right, buttonholes on left)")   
@@ -385,8 +373,7 @@ Button Placement")
 
         if garment_name == "Dress":   
             while True:   
-                print("\\
-Select Dress Waistline Option:")   
+                print("\nSelect Dress Waistline Option:")   
                 dress_waistline_options = {   
                     "1": "Empire/High",   
                     "2": "Mid-Torso",   
@@ -447,8 +434,7 @@ Select Dress Waistline Option:")
 
         if garment_name == "Vest" or "Suit (Vest" in garment_name:   
             while True:   
-                print("\\
-Vest Bottom Style")   
+                print("\nVest Bottom Style")   
                 print("Choose the bottom style for the front flaps of your vest:")   
                 print("1. Rounded Bottom")   
                 print("2. Pointed/V Bottom")   
@@ -473,8 +459,7 @@ Vest Bottom Style")
                 else:   
                     print("Invalid choice. Please enter a number from 1 to 4 (or 0 to go back).")   
 
-        print("\\
---- Additional Customizations ---")   
+        print("\n--- Additional Customizations ---")   
         # Removed: print("This section currently has no general customizations. Proceeding to the next step.")   
 
         while True:   
@@ -487,8 +472,7 @@ Vest Bottom Style")
                 print("Invalid choice. Please enter 'yes', 'no', or 0 to go back.")   
 
         if complex_design_prompt_input in ["yes", "y"]:   
-            print("\\
-Select Complex Design Details")   
+            print("\nSelect Complex Design Details")   
             print("You can choose multiple options. Type 'done' or 'd' when finished.")   
 
             complex_options_with_desc = {   
@@ -510,8 +494,7 @@ Select Complex Design Details")
             temp_fabric_adjustments = 0   
 
             while True:   
-                print("\\
-Options:")   
+                print("\nOptions:")   
                 for num, option_data in complex_options_with_desc.items():   
                     print(f"{num}. {option_data['name']} - {option_data['desc']}")   
                 print("Type 'done' or 'd' to finish selecting (or 0 to go back to previous step).")   
@@ -541,8 +524,7 @@ Options:")
 
                         if chosen_option_name == "Pockets":   
                             while True:   
-                                print("\\
-What kind of pockets would you like?")   
+                                print("\nWhat kind of pockets would you like?")   
                                 print("1. Standard Patch Pockets")   
                                 print("2. Hidden Seam Pockets")   
                                 print("3. Zipper Pockets")   
@@ -582,8 +564,7 @@ What kind of pockets would you like?")
                 additional_cost += 70.00   
                 fabric_adjustment += 2.0   
 
-        print("\\
-Choose Your Fabric(s)")   
+        print("\nChoose Your Fabric(s)")   
         fabric_prices = {   
             "Polyester": 10.00,   
             "Fleece": 11.00,   
@@ -601,8 +582,7 @@ Choose Your Fabric(s)")
 
         def get_fabric_details(part_of_garment=""):   
             while True:   
-                print(f"\\
-Select Fabric for {part_of_garment}:")   
+                print(f"\nSelect Fabric for {part_of_garment}:")   
                 print("Available Fabric Types (Least to Most Expensive):")   
                 sorted_fabrics = sorted(fabric_prices.items(), key=lambda item: item[1])   
                 fabric_options_map = {}   
@@ -665,8 +645,7 @@ Select Fabric for {part_of_garment}:")
                     chosen_fabrics.append({"part": "Pants", "name": pants_fabric_name, "style": pants_fabric_style, "price_per_yard": pants_price_per_yard})   
 
                 if lining_chosen == "Yes":   
-                    print("\\
-Now, choose the fabric for the Lining.")   
+                    print("\nNow, choose the fabric for the Lining.")   
                     lining_fabric_name, lining_fabric_style, lining_price_per_yard = get_fabric_details("Lining")   
                     if lining_fabric_name == "GO_BACK": continue   
                     chosen_fabrics.append({"part": "Lining", "name": lining_fabric_name, "style": lining_fabric_style, "price_per_yard": lining_price_per_yard})   
@@ -685,8 +664,7 @@ Now, choose the fabric for the Lining.")
                 chosen_fabrics.append({"part": bottom_type_for_fabric, "name": bottom_fabric_name, "style": bottom_fabric_style, "price_per_yard": bottom_price_per_yard})   
 
                 if lining_chosen == "Yes":   
-                    print("\\
-Now, choose the fabric for the Lining.")   
+                    print("\nNow, choose the fabric for the Lining.")   
                     lining_fabric_name, lining_fabric_style, lining_price_per_yard = get_fabric_details("Lining")   
                     if lining_fabric_name == "GO_BACK": continue   
                     chosen_fabrics.append({"part": "Lining", "name": lining_fabric_name, "style": lining_fabric_style, "price_per_yard": lining_price_per_yard})   
@@ -703,8 +681,7 @@ Now, choose the fabric for the Lining.")
                     chosen_fabrics.append({"part": "Sleeves", "name": sleeve_fabric_name, "style": sleeve_fabric_style_type, "price_per_yard": sleeve_price_per_yard})   
 
                 if lining_chosen == "Yes":   
-                    print("\\
-Now, choose the fabric for the Lining.")   
+                    print("\nNow, choose the fabric for the Lining.")   
                     lining_fabric_name, lining_fabric_style, lining_price_per_yard = get_fabric_details("Lining")   
                     if lining_fabric_name == "GO_BACK": continue   
                     chosen_fabrics.append({"part": "Lining", "name": lining_fabric_name, "style": lining_fabric_style, "price_per_yard": lining_price_per_yard})   
@@ -821,8 +798,7 @@ Now, choose the fabric for the Lining.")
             "quantity": quantity   
         }   
         completed_orders.append(current_garment_order)   
-        print(f"\\
-'{quantity} x {garment_name}' added to your order!")   
+        print(f"\n'{quantity} x {garment_name}' added to your order!")   
 
         for meas in required_measurements_for_current_garment:   
             all_required_measurements.add(meas)   
@@ -893,8 +869,7 @@ Now, choose the fabric for the Lining.")
                     break   
 
             if can_form_this_combo:   
-                print("\\
---- Special Offer! ---")   
+                print("\n--- Special Offer! ---")   
                 print(f"It looks like you've selected individual items that can form a '{combo_name}'.")   
                 print(f"If you combine these into the '{combo_name}', you can receive a {int((1 - combo_cost_factor) * 100)}% discount!")   
                 confirm_combo = input("Would you like to take advantage of this offer? (yes/no): ").strip().lower()   
@@ -994,8 +969,7 @@ Now, choose the fabric for the Lining.")
                     print("No problem! Your individual selections will remain as is.")   
 
     if completed_orders:   
-        print("\\
-" + "="*40)   
+        print("\n" + "="*40)   
         print(" Time for Measurements!")   
         print("="*40)   
         print("Please follow the instructions below to take all necessary measurements.")   
@@ -1005,8 +979,7 @@ Now, choose the fabric for the Lining.")
         for measurement_name in sorted_required_measurements:   
             while True:   
                 try:   
-                    print(f"\\
-Measurement: {measurement_name}")   
+                    print(f"\nMeasurement: {measurement_name}")   
                     print(f"Guide: {measurement_descriptions.get(measurement_name, 'Please measure carefully.')}")   
                     value_str = input(f"Enter your {measurement_name} measurement (in inches, or 0 to go back and restart order): ").strip()   
                     if value_str == "0":   
@@ -1021,22 +994,18 @@ Measurement: {measurement_name}")
                 except ValueError:   
                     print("Invalid input. Please enter a number (e.g., 34 or 34.5, or 0 to go back).")   
 
-        print("\\
-Thank you for providing your precise measurements!")   
+        print("\nThank you for providing your precise measurements!")   
 
-        print("\\
-" + "="*40)   
+        print("\n" + "="*40)   
         print(" Your Complete Custom Order Summary")   
         print("="*40)   
 
         grand_total_cost = 0   
 
         if not completed_orders:   
-            print("\\
-No garments were added to your order.")   
+            print("\nNo garments were added to your order.")   
         else:   
-            print("\\
---- Internal Design Details: Customer Measurements ---")   
+            print("\n--- Internal Design Details: Customer Measurements ---")   
             if customer_measurements_session:   
                 for m_name in sorted(customer_measurements_session.keys()):   
                     print(f" - {m_name}: {customer_measurements_session[m_name]:.1f} inches")   
@@ -1044,8 +1013,7 @@ No garments were added to your order.")
                 print(" No measurements were collected during this session.")   
             print("-" * 40)   
 
-            print("\\
---- Garment Details (Customer View) ---")   
+            print("\n--- Garment Details (Customer View) ---")   
             for i, order in enumerate(completed_orders):   
                 description_lines = []   
 
@@ -1129,8 +1097,7 @@ No garments were added to your order.")
                 item_total_cost = order.get('total_cost_per_unit', 0) * order.get('quantity', 1)   
                 grand_total_cost += item_total_cost   
 
-            print("\\
-" + "="*40)   
+            print("\n" + "="*40)   
             print(" Financial Summary")   
             print("="*40)   
             for order in completed_orders:   
@@ -1160,16 +1127,13 @@ No garments were added to your order.")
                 item_total_cost = order.get('total_cost_per_unit', 0) * order.get('quantity', 1)   
                 print(f"{garment_display_name_summary} - ${item_total_cost:.2f}")   
 
-            print("\\
-Total Order - ${grand_total_cost:.2f}")   
+            print(f"\nTotal Order - ${grand_total_cost:.2f}")   
 
-            print("\\
-This is an **estimated cost**. The final price may vary slightly based on final design discussions.")   
+            print("\nThis is an **estimated cost**. The final price may vary slightly based on final design discussions.")   
             print("You will receive a detailed invoice upon final order confirmation.")   
             print("When you are ready, you can proceed to the 'Pay now' or 'Finished' option to finalize your order.")   
 
             print("Your custom piece(s) will be made precisely to the measurements you provided.")   
-            print("\\
-Thank you for choosing Kate's Couture for your custom garment!")   
+            print("\nThank you for choosing Kate's Couture for your custom garment!")   
 
 run_kates_couture_app()
